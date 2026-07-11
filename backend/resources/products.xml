@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<products>
+    <product>
+        <title>UltraBook 14 Pro</title>
+        <description>Lightweight 14-inch laptop with 16GB RAM and 512GB SSD.</description>
+        <category>Electronics | Computers | Laptops</category>
+        <sku>10001</sku>
+        <price>1299.00</price>
+        <stock>12</stock>
+    </product>
+    <product>
+        <title>UltraBook 16 Max</title>
+        <description>16-inch performance laptop for creative work.</description>
+        <category>Electronics | Computers | Laptops</category>
+        <sku>10002</sku>
+        <price>1899.99</price>
+        <stock>4</stock>
+    </product>
+    <product>
+        <title>TowerStation Mini</title>
+        <description>Compact desktop tower with expandable storage.</description>
+        <category>Electronics | Computers | Desktops</category>
+        <sku>10003</sku>
+        <price>899.50</price>
+        <stock>7</stock>
+    </product>
+
+    <!-- shared leaf category Headphones (two products) + zero stock -->
+    <product>
+        <title>NoiseCancel Over-Ear Headphones</title>
+        <description>Wireless over-ear headphones with active noise cancellation.</description>
+        <category>Electronics | Audio | Headphones</category>
+        <sku>10004</sku>
+        <price>249.00</price>
+        <stock>0</stock>
+    </product>
+    <product>
+        <title>StudioBuds Wireless</title>
+        <description>In-ear wireless earbuds with charging case.</description>
+        <category>Electronics | Audio | Headphones</category>
+        <sku>10005</sku>
+        <price>129.99</price>
+        <stock>35</stock>
+    </product>
+
+    <!-- NO description tag: importer stores NULL -->
+    <product>
+        <title>SoundBar 2.1</title>
+        <category>Electronics | Audio | Speakers</category>
+        <sku>10006</sku>
+        <price>179.00</price>
+        <stock>18</stock>
+    </product>
+
+    <!-- ampersand escaped as &amp; -->
+    <product>
+        <title>ErgoChair Lumbar</title>
+        <description>Adjustable ergonomic office chair with lumbar support.</description>
+        <category>Home &amp; Garden | Furniture | Chairs</category>
+        <sku>10007</sku>
+        <price>329.00</price>
+        <stock>9</stock>
+    </product>
+    <product>
+        <title>Oak Dining Table</title>
+        <description>Solid oak dining table, seats six.</description>
+        <category>Home &amp; Garden | Furniture | Tables</category>
+        <sku>10008</sku>
+        <price>749.00</price>
+        <stock>3</stock>
+    </product>
+
+    <!-- messy whitespace around the category levels: importer trims each part -->
+    <product>
+        <title>Ceramic Plant Pot Set</title>
+        <description>Set of three ceramic pots for indoor plants.</description>
+        <category>  Home &amp; Garden |  Decor  | Planters </category>
+        <sku>10009</sku>
+        <price>39.95</price>
+        <stock>60</stock>
+    </product>
+
+    <!-- zero stock -->
+    <product>
+        <title>Cordless Drill 18V</title>
+        <description>18V cordless drill with two batteries and case.</description>
+        <category>Tools | Power Tools | Drills</category>
+        <sku>10010</sku>
+        <price>119.00</price>
+        <stock>0</stock>
+    </product>
+    <product>
+        <title>Precision Screwdriver Kit</title>
+        <description>45-piece precision screwdriver set for electronics.</description>
+        <category>Tools | Hand Tools | Screwdrivers</category>
+        <sku>10011</sku>
+        <price>24.50</price>
+        <stock>140</stock>
+    </product>
+    <product>
+        <title>Mechanical Keyboard TKL</title>
+        <description>Tenkeyless mechanical keyboard with hot-swappable switches.</description>
+        <category>Electronics | Computers | Accessories</category>
+        <sku>10012</sku>
+        <price>89.99</price>
+        <stock>22</stock>
+    </product>
+
+    <!-- MALFORMED: empty SKU, importer logs a warning and skips it -->
+    <product>
+        <title>Broken Entry (no SKU)</title>
+        <description>This row has no sku and must be skipped.</description>
+        <category>Tools | Hand Tools | Wrenches</category>
+        <sku></sku>
+        <price>9.99</price>
+        <stock>5</stock>
+    </product>
+</products>
