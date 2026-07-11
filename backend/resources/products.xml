@@ -106,6 +106,111 @@
         <stock>22</stock>
     </product>
 
+    <product>
+        <title>Gaming Mouse RGB</title>
+        <description>Ergonomic gaming mouse with adjustable DPI.</description>
+        <category>Electronics | Computers | Accessories</category>
+        <sku>10013</sku>
+        <price>45.00</price>
+        <stock>30</stock>
+    </product>
+    <product>
+        <title>4K Monitor 27"</title>
+        <description>27-inch 4K UHD monitor with HDR.</description>
+        <category>Electronics | Computers | Monitors</category>
+        <sku>10014</sku>
+        <price>329.00</price>
+        <stock>15</stock>
+    </product>
+    <product>
+        <title>USB-C Hub 7-in-1</title>
+        <description>7-port USB-C hub with HDMI and card reader.</description>
+        <category>Electronics | Computers | Accessories</category>
+        <sku>10015</sku>
+        <price>39.99</price>
+        <stock>0</stock>
+    </product>
+    <product>
+        <title>Bluetooth Speaker Mini</title>
+        <description>Portable Bluetooth speaker with 12h battery.</description>
+        <category>Electronics | Audio | Speakers</category>
+        <sku>10016</sku>
+        <price>59.99</price>
+        <stock>25</stock>
+    </product>
+    <product>
+        <title>Yoga Mat Pro</title>
+        <description>Non-slip yoga mat, 6mm thick.</description>
+        <category>Sports | Fitness | Mats</category>
+        <sku>10017</sku>
+        <price>29.99</price>
+        <stock>80</stock>
+    </product>
+    <product>
+        <title>Dumbbell Set 20kg</title>
+        <description>Adjustable dumbbell set with case.</description>
+        <category>Sports | Fitness | Weights</category>
+        <sku>10018</sku>
+        <price>89.00</price>
+        <stock>12</stock>
+    </product>
+    <product>
+        <title>Trail Running Shoes</title>
+        <description>Lightweight trail running shoes with grip sole.</description>
+        <category>Sports | Footwear | Running</category>
+        <sku>10019</sku>
+        <price>119.99</price>
+        <stock>40</stock>
+    </product>
+    <product>
+        <title>Cookbook Deluxe</title>
+        <description>500 recipes from around the world.</description>
+        <category>Books | Cooking | Recipes</category>
+        <sku>10020</sku>
+        <price>24.99</price>
+        <stock>100</stock>
+    </product>
+    <product>
+        <title>Sci-Fi Novel: Nebula</title>
+        <description>A space opera adventure novel.</description>
+        <category>Books | Fiction | Science Fiction</category>
+        <sku>10021</sku>
+        <price>14.99</price>
+        <stock>0</stock>
+    </product>
+    <product>
+        <title>LED Desk Lamp</title>
+        <description>Dimmable LED desk lamp with USB charging.</description>
+        <category>Home &amp; Garden | Lighting | Lamps</category>
+        <sku>10022</sku>
+        <price>34.50</price>
+        <stock>22</stock>
+    </product>
+    <product>
+        <title>Minimalist Wall Clock</title>
+        <description>Silent quartz wall clock, 30cm.</description>
+        <category>Home &amp; Garden | Decor | Clocks</category>
+        <sku>10023</sku>
+        <price>19.99</price>
+        <stock>33</stock>
+    </product>
+    <product>
+        <title>Garden Hose 30m</title>
+        <description>Expandable garden hose with spray nozzle.</description>
+        <category>Home &amp; Garden | Outdoor | Watering</category>
+        <sku>10024</sku>
+        <price>44.00</price>
+        <stock>18</stock>
+    </product>
+    <product>
+        <title>Chef Knife 8"</title>
+        <description>Stainless steel chef knife with ergonomic handle.</description>
+        <category>Home &amp; Garden | Kitchen | Knives</category>
+        <sku>10025</sku>
+        <price>64.99</price>
+        <stock>27</stock>
+    </product>
+
     <!-- MALFORMED: empty SKU, importer logs a warning and skips it -->
     <product>
         <title>Broken Entry (no SKU)</title>
