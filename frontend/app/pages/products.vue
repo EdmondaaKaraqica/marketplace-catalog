@@ -18,8 +18,7 @@ const query = computed(() => {
   return q
 })
 
-const { data, pending, error } = await useFetch('/api/products', {
-  baseURL: config.public.apiBase,
+const { data, pending, error } = await useApiFetch('/api/products', {
   query, // reactive: refetches whenever query changes
 })
 

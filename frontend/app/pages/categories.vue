@@ -5,8 +5,7 @@ const page = ref(1)
 const limit = ref(20)
 
 // useFetch re-runs automatically when `page` changes (query is reactive)
-const { data, pending, error } = await useFetch('/api/categories', {
-  baseURL: config.public.apiBase,
+const { data, pending, error } = await useApiFetch('/api/categories', {
   query: { page, limit },
 })
 
