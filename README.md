@@ -73,3 +73,16 @@ npm run dev
 
 REST JSON under `/api`, protected with a Bearer token. Anonymous requests to
 category/product endpoints return `401`. See `DECISIONS.md` for design notes.
+
+## Tests
+
+Backend tests run with PHPUnit. Run them in Docker (the image has the `pdo_sqlite`
+extension the tests need):
+
+```bash
+docker compose exec backend php vendor/bin/phpunit
+```
+
+They cover the catalog importer (create / update / delete, idempotency, malformed
+rows, category-path parsing) against a throwaway in-memory SQLite database, plus
+unit tests for the auth model (`User` roles, `ApiToken` expiry).

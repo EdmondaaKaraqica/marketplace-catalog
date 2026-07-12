@@ -89,6 +89,21 @@ because the products page filters on them; the category foreign key is auto-inde
 - **CORS** is enabled (NelmioCorsBundle) so the frontend (`localhost:3000`) can call
   the backend (`localhost:8000`) in development.
 
+## Testing
+
+- **Importer is covered by integration tests.** The catalog importer is the core
+  business logic, so it's tested end to end: create / update / delete, idempotent
+  re-import, skipping malformed rows, and category-path parsing.
+- **In-memory SQLite for speed and isolation.** The importer tests build a throwaway
+  SQLite database in memory, so they need no running Postgres or Docker network and
+  each test starts from an empty schema. (Doctrine's DQL keeps the importer database-
+  agnostic; the one place SQLite differs — it drops trailing zeros on `DECIMAL` — is
+  handled by comparing the numeric value rather than the exact string.)
+- **Assertions use DQL, not `getRepository()`.** The app's repositories extend
+  Symfony's `ServiceEntityRepository`, which needs the container's `ManagerRegistry`
+  and can't be built from a bare `EntityManager`, so the tests query with DQL.
+- **Auth model has unit tests** (`User` roles, `ApiToken` expiry).
+
 ## Environment / config
 
 - **`.env` is committed** (Symfony convention: non-secret defaults); machine-specific
@@ -115,7 +130,9 @@ because the products page filters on them; the category foreign key is auto-inde
 
 ## What I'd improve with more time
 
-- Automated unit and integration tests for the import process and authentication flow.
+- Extend the test suite: the importer is covered by integration tests and the auth
+  model by unit tests; next would be a full HTTP functional test of the login flow
+  and the protected endpoints.
 - Hash the API token at rest, rate-limit the code-request endpoint, and add a cleanup
   for expired tokens.
 - Category product counts across the whole subtree (if needed) via a closure table or
