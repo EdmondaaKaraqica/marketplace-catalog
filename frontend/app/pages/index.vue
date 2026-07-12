@@ -1,11 +1,9 @@
 <script setup lang="ts">
-const config = useRuntimeConfig()
-const { data: health } = await useFetch(`${config.public.apiBase}/api/health`)
+// Landing route: send logged-in users to the app, everyone else to login.
+const token = useCookie<string | null>('auth_token')
+await navigateTo(token.value ? '/categories' : '/login')
 </script>
 
 <template>
-  <main style="font-family: sans-serif; padding: 2rem;">
-    <h1>Frontend is running</h1>
-    <p>Backend health: <strong>{{ health?.status ?? 'unavailable' }}</strong></p>
-  </main>
+  <div />
 </template>
