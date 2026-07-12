@@ -54,7 +54,6 @@ class AuthService
         $this->em->persist($token);
         $this->em->flush();
 
-       // var_dump('token val:', $token->getToken());
         return $token;
     }
 }

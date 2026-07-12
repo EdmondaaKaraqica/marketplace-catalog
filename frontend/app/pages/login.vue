@@ -25,7 +25,6 @@ async function verifyCode() {
       method: 'POST',
       body: { email: email.value, code: code.value },
     })
-    console.log('token val:', res.token)
     token.value = res.token          // store token in cookie
     await navigateTo('/categories')  // go to the app
   } catch {
